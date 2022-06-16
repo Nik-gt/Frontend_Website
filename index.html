@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--19июня,воскресенье. разбираемся с flex -->
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Никита Архипов">
+    <meta name="description" content="Портфолио, Никита Архипов">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разработчик веб приложений Никита Архипов</title>
+    <link href="style.css" rel="stylesheet" type="text/css" id="theme-link">
+
+</head>
+<body>
+    <div class="navigation">
+        <a class="btn-toggle"><img src="site_data/theme-moon.png" style="width: 24px; height: 24px; padding-right: 20px" " alt="Theme switch"></a>
+        <a href="https://github.com/Nik-gt"><img src="site_data/github-logo.png" style="height: 24px; width:24px; padding-right: 20px" alt="GitHub"></a>
+        <a href="https://t.me/Simon_eon"><img src="site_data/telegram-logo.png" style="height: 24px; width: 24px; padding-right: 20px" alt="TG"></a>
+        <a href="nikitaarkhipov2002@mail.ru"><img src="site_data/mail.png" style="height: 24px; width: 24px; padding-right: 20px" alt="Mail"></a>
+        <a href="https://wa.me/8000239455"><img src="site_data/WhatsApp.png" style="height: 24px; width: 24px; padding-right: 20px" alt="WhatsApp"></a>
+        <a href="tel:8000239455"><img src="site_data/icon-telephone2.png" style="height: 24px; width:24px" alt="TP"></a>
+    </div>
+
+
+    <!--Секция 1, фото слева, текст справа -->
+    <div class="flex-container" style="height: 100%">
+        <!--Аватарка-фото-->
+        <img src="site_data/man2.jpg" style="width: 318px; height: 318px" alt="Student at a computer">
+        <!--Текст справа от фото-->
+        <div style="margin-left:5%">
+            <h2>Я Никита Архипов, веб-разработчик</h2>
+
+            <div style="margin-top: 10%; margin-bottom:2%; font-style:italic ">Контакты:</div>
+
+            <a href="tel:8000239455">7 (800) 023 94 55</a>
+            <br>
+            <a href="mailto:nikitaarkhipov2002@mail.ru">nikitaarkhipov2002@mail.ru</a>
+            <br>
+            <a href="https://t.me/Simon_eon">t.me/Simon_eon</a>
+        </div>
+    </div>
+
+    <!--Секция 2 -->
+    <h2>Обо мне</h2>
+    <div class="flex-container">
+        <div style="text-indent:5%">
+            Я студент МТУСИ, обучаюсь информационным технологиям по программе 09.03.01, Информатика и вычислительная техника.<br>
+            В сферу моей деятельности входит интерфейс: HTML/CSS/Javascript, проектирование веб-приложений с использованием современных подходов.<br>
+            Также я проектировал бэкэнд на Python и Visual C++.<br>
+            Сейчас я хочу набить руку в разработке фронтэнд с использованием фреймворков и библиотек.<br>
+        </div>
+    </div>
+
+    <!--Секция 3 -->
+    <h2>Навыки</h2>
+    <div class="flex-container1">
+        <div class="flex-item1">HTML</div>
+        <div class="flex-item1">CSS</div>
+        <div class="flex-item1">JavaSqript</div>
+        <div class="flex-item1">Python</div>
+        <div class="flex-item1">Figma</div>
+        <div class="flex-item1">Visual&nbsp;C++</div>
+        <div class="flex-item1">Photoshop</div>
+    </div>
+
+    <!--Секция 4 -->
+    <h2>
+        Проекты
+        <!--заменить на иконку -->
+        <a href="https://github.com/Nik-gt"><img src="site_data/1.png" style="width:24px;height:24px"> GitHub:</a>
+    </h2>
+    <div class="flex-container" style="justify-content: space-around;">
+        <div>
+            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab1.ipynb">Сортировка массива</a>
+            <br>
+            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab2.ipynb">Методы поиска массива</a>
+            <br>
+            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab3.ipynb">Методы поиска подстроки в строке</a>
+            <br>
+            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab4.ipynb">Стек, дек, очередь</a>
+            <br>
+            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab5.ipynb">Рекурсия, фракталы</a>
+            <br>
+            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab6.ipynb">Динамические алгоритмы поиска путей</a>
+        </div>
+        <div>
+            <img src="site_data/algorithm.gif" style="width: 150px;" alt="алгоритм">
+        </div>
+        <div>
+            <img src="site_data/fractal.gif" style="width: 140px;" alt="фракталы">
+        </div>
+    </div>
+
+    <!--Секция 5 -->
+    <h2>Хобби (комп.игры)</h2>
+    <div class="flex-container">
+        <div class="flex-item2">
+            <img src="site_data/ghostwire.jpg" style="width: 100%; margin: 0 0 0 10%; border-radius: 10px; box-shadow: 0 0 10px #444 " alt="GhostwireTokyo">
+        </div>
+        <div class="flex-item2">
+            <img src="site_data/L.A.-Noire.jpg" style="width: 100%; margin: 0 0 0 10%; border-radius: 10px; box-shadow: 0 0 10px #444 " alt="L.A.-Noire">
+        </div>
+        <div class="flex-item2">
+            <img src="site_data/Quantum Break.jpg" style="width: 100%; margin: 0 0 0 10%; border-radius: 10px; box-shadow: 0 0 10px #444 " alt="Quantum Break">
+        </div>
+    </div>
+    <script src="theme.js"></script>
+</body>
+</html>
