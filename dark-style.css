@@ -52,10 +52,10 @@ a:hover {
 .flex-container {
     display: flex;
     flex-flow: row wrap;
-    /*
-    padding: 0;
-    margin: 0;
-        */
+}
+
+.flex-container img {
+    box-shadow: 0 10px 30px #808080
 }
 
 /*flex-container для вывода текства в колонки*/
@@ -71,7 +71,6 @@ a:hover {
 /* помещаем текст в 3 колонки*/
 .flex-item1 {
     flex-direction: column;
-    column-count: 3;
     width: 10%;
     padding: 5px;
 }
