@@ -1,14 +1,17 @@
-/*Задаем параметры стандартных элементов */
+/*Р—Р°РґР°РµРј РїР°СЂР°РјРµС‚СЂС‹ СЃС‚Р°РЅРґР°СЂС‚РЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ */
 body {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 1% 20% 1% 20%;
     font-size: larger;
+    width: 60%;
     color: white;
     background: #373737;
 }
 
-h2{    text-align:center;}
+h2{
+    text-align:center;
+}
 
+/*Р—Р°РґР°РµРј СЃС‚РёР»СЊ СЃСЃС‹Р»РѕРє, РєР°Рє РѕР±С‹С‡РЅС‹Р№ С‚РµРєСЃС‚, РїСЂРё РЅР°РІРµРґРµРЅРёРё-РёР·РјРµРЅСЏРµРј РµРіРѕ */
 a {
     font-family: var(--font-sans);
     font-weight: var(--font-weight-6);
@@ -19,16 +22,16 @@ a {
     position: relative;
 }
 
-/*Задаем стиль ссылок, как обычный текст, при наведении-меняется */
 a:link {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-a:visited {
+a:visited { 
     color: white;
 }
+
 a:hover {
     color: orange;
     --y: 0;
@@ -36,55 +39,100 @@ a:hover {
     --border-scale: 1;
 }
 
-/*Заголовок со ссылками*/
-.navigation {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 20px;
-    filter:invert();
-    /*background: deepskyblue; */
+
+li {
+    list-style-type: none; /* РџСЂСЏС‡РµРј РёСЃС…РѕРґРЅС‹Рµ РјР°СЂРєРµСЂС‹ */
 }
 
-/*Задаем стиль flex контейнеров*/
-/*flex-container обычный*/
+    li:before {
+        color: orange; /* Р¦РІРµС‚ РјР°СЂРєРµСЂР° */
+        content: "в—Џ"; /* РЎР°Рј РјР°СЂРєРµСЂ */
+        padding-right: 10px; /* Р Р°СЃСЃС‚РѕСЏРЅРёРµ РѕС‚ РјР°СЂРєРµСЂР° РґРѕ С‚РµРєСЃС‚Р° */
+    }
+
+/*Р—Р°РіРѕР»РѕРІРѕРє СЃРѕ СЃСЃС‹Р»РєР°РјРё - flex РєРѕРЅС‚РµР№РЅРµСЂ*/
+.navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+    gap: 20px;
+    width: 100%;
+    filter:invert();
+}
+
+/*flex РєРѕРЅС‚РµР№РЅРµСЂ РѕР±С‹С‡РЅС‹Р№*/
 .flex-container {
     display: flex;
     flex-flow: row wrap;
 }
 
 .flex-container img {
-    box-shadow: 0 10px 30px #808080
+    border-radius: 10px;
+    box-shadow: 0 10px 30px #444
 }
 
-/*flex-container для вывода текства в колонки*/
+img:hover {
+    filter:brightness(80%);
+}
+
+/*flex РєРѕРЅС‚РµР№РЅРµСЂ РґР»СЏ РІС‹РІРѕРґР° С‚РµРєСЃС‚Р° РІ РєРѕР»РѕРЅРєРё*/
 .flex-container1 {
     display: flex;
     flex-flow: row wrap;
-    flex-direction: column;
-    /*width: 600px;*/
-    height: 100px;
-    margin: 0 0 0 10%;
+    justify-content: space-around;
+    gap: 20px;
 }
 
-/* помещаем текст в 3 колонки*/
-.flex-item1 {
-    flex-direction: column;
-    width: 10%;
-    padding: 5px;
+.hobby {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
-.flex-item2 {
-    max-width: 30%;
-    padding: 5px;
-    text-align: center;
+img.hobby {
+    width: 45%;
 }
 
-@media (max-width: 800px) {
-    .flex-container, .flex-item2 {
-        flex: 90%;
-        max-width: 90%;
+
+.projects {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.projects img {
+    width: 400px;
+    margin: 5px 25px 20px 0;
+}
+
+    /*РќР°СЃС‚СЂРѕР№РєРєР° media */
+    @media (max-width: 800px) {
+        body {
+            margin: 1% 5% 1% 5%;
+            font-size: medium;
+            width: 90%;
+        }
+
+        .hobby {
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            width: 100%
+        }
+
+        img.hobby {
+            width: 95%;
+        }
+
+        .navigation {
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        .projects {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+            .projects img {
+                width: 95%;
+            }
     }
-
-}

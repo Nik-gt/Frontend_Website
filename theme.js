@@ -1,16 +1,17 @@
-// Выбираем кнопку
-const btn = document.querySelector(".btn-toggle");
-// Выбираем таблицу стилей
+// Р’С‹Р±РёСЂР°РµРј РєРЅРѕРїРєСѓ
+//const btn = document.querySelector(".btn-toggle");
+btn = document.getElementById("theme_switch") 
+// Р’С‹Р±РёСЂР°РµРј С‚Р°Р±Р»РёС†Сѓ СЃС‚РёР»РµР№
 const theme = document.querySelector("#theme-link");
-// Отслеживаем щелчок по кнопке
+// РћС‚СЃР»РµР¶РёРІР°РµРј С‰РµР»С‡РѕРє РїРѕ РєРЅРѕРїРєРµ
 btn.addEventListener("click", function() {
-  // Если текущий адрес содержит "light-theme.css"
+  // Р•СЃР»Рё С‚РµРєСѓС‰РёР№ Р°РґСЂРµСЃ СЃРѕРґРµСЂР¶РёС‚ "light-theme.css"
   if (theme.getAttribute("href") == "style.css") {
-    // …то переключаемся на "dark-theme.css"
+    // вЂ¦С‚Рѕ РїРµСЂРµРєР»СЋС‡Р°РµРјСЃСЏ РЅР° "dark-theme.css"
     theme.href = "dark-style.css";
-    // В противном случае… 
+    // Р’ РїСЂРѕС‚РёРІРЅРѕРј СЃР»СѓС‡Р°РµвЂ¦ 
   } else {
-    // …переключаемся на "light-theme.css"
+    // вЂ¦РїРµСЂРµРєР»СЋС‡Р°РµРјСЃСЏ РЅР° "light-theme.css"
     theme.href = "style.css";
   }
 });

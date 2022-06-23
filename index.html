@@ -11,26 +11,27 @@
 
 </head>
 <body>
+    <!--Секция навигации, верхняя строка экрана -->
     <div class="navigation">
-        <a class="btn-toggle"><img src="site_data/theme-moon.png" style="width: 24px; height: 24px; padding-right: 20px" " alt="Theme switch"></a>
-        <a href="https://github.com/Nik-gt"><img src="site_data/github-logo.png" style="height: 24px; width:24px; padding-right: 20px" alt="GitHub"></a>
-        <a href="https://t.me/Simon_eon"><img src="site_data/telegram-logo.png" style="height: 24px; width: 24px; padding-right: 20px" alt="TG"></a>
-        <a href="nikitaarkhipov2002@mail.ru"><img src="site_data/mail.png" style="height: 24px; width: 24px; padding-right: 20px" alt="Mail"></a>
-        <a href="https://wa.me/8000239455"><img src="site_data/WhatsApp.png" style="height: 24px; width: 24px; padding-right: 20px" alt="WhatsApp"></a>
-        <a href="tel:8000239455"><img src="site_data/icon-telephone2.png" style="height: 24px; width:24px" alt="TP"></a>
+        <a id="theme_switch"><img src="site_data/svgrepo-moon.svg" style="width: 24px; height: 24px" alt="Theme switch"></a>
+        <a href="https://github.com/Nik-gt"><img src="site_data/svgrepo-github.svg" style="height: 24px; width:24px" alt="GitHub"></a>
+        <a href="https://t.me/Simon_eon"><img src="site_data/svgrepo-telegram.svg" style="height: 24px; width: 24px" alt="TG"></a>
+        <a href="nikitaarkhipov2002@mail.ru"><img src="site_data/svgrepo-email.svg" style="height: 24px; width: 24px" alt="Mail"></a>
+        <a href="https://wa.me/8000239455"><img src="site_data/svgrepo-whatsapp.svg" style="height: 24px; width: 24px" alt="WhatsApp"></a>
+        <a href="tel:8000239455"><img src="site_data/svgrepo-phone.svg" style="height: 24px; width:24px;" alt="Phone call"></a>
     </div>
 
 
-    <!--Секция 1, фото слева, текст справа -->
-    <div class="flex-container" style="height: 100%">
+    <!-- фото слева, текст справа -->
+    <div class="flex-container">
+        <!--style="height: 100%"-->
         <!--Аватарка-фото-->
-        <img src="site_data/man2.jpg" style="width: 318px; height: 318px" alt="Student at a computer">
+        <img class="hobby" src="site_data/studernt_at_computer.jpg" alt="Student at a computer">
+
         <!--Текст справа от фото-->
         <div style="margin-left:5%">
             <h2>Я Никита Архипов, веб-разработчик</h2>
-
             <div style="margin-top: 10%; margin-bottom:2%; font-style:italic ">Контакты:</div>
-
             <a href="tel:8000239455">7 (800) 023 94 55</a>
             <br>
             <a href="mailto:nikitaarkhipov2002@mail.ru">nikitaarkhipov2002@mail.ru</a>
@@ -39,7 +40,7 @@
         </div>
     </div>
 
-    <!--Секция 2 -->
+
     <h2>Обо мне</h2>
     <div class="flex-container">
         <div style="text-indent:5%">
@@ -50,59 +51,108 @@
         </div>
     </div>
 
-    <!--Секция 3 -->
-    <h2>Навыки</h2>
-    <div class="flex-container1">
-        <div class="flex-item1">HTML</div>
-        <div class="flex-item1">CSS</div>
-        <div class="flex-item1">JavaSqript</div>
-        <div class="flex-item1">Python</div>
-        <div class="flex-item1">Figma</div>
-        <div class="flex-item1">Visual&nbsp;C++</div>
-        <div class="flex-item1">Photoshop</div>
-    </div>
 
-    <!--Секция 4 -->
+    <h2>Навыки</h2>
+    <ul class="flex-container1">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaSqript</li>
+        <li>Python</li>
+        <li>Figma</li>
+        <li>Visual&nbsp;C++</li>
+        <li>Photoshop</li>
+    </ul>
+
+    <!--div class="flex-container1">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaSqript</div>
+        <div>Python</div>
+        <div>Figma</div>
+        <div>Visual&nbsp;C++</div>
+        <div>Photoshop</div>
+    </!--div-->
+
+
     <h2>
         Проекты
-        <!--заменить на иконку -->
-        <a href="https://github.com/Nik-gt"><img src="site_data/1.png" style="width:24px;height:24px"> GitHub:</a>
+        <a href="https://github.com/Nik-gt"><img src="site_data/icon_connect.png" style="width:24px;height:24px" alt="icon connect"> GitHub:</a>
     </h2>
-    <div class="flex-container" style="justify-content: space-around;">
-        <div>
-            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab1.ipynb">Сортировка массива</a>
-            <br>
-            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab2.ipynb">Методы поиска массива</a>
-            <br>
-            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab3.ipynb">Методы поиска подстроки в строке</a>
-            <br>
-            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab4.ipynb">Стек, дек, очередь</a>
-            <br>
-            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab5.ipynb">Рекурсия, фракталы</a>
-            <br>
-            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab6.ipynb">Динамические алгоритмы поиска путей</a>
+    <div class="flex-container" style="justify-content: space-between; margin-left:5%">
+        <div class="projects">
+            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab1.ipynb"><img src="site_data/algo_sort.jpg" style="background-color: white" alt="алгоритм0"></a>
+            <div>
+                <div style=" font-size: 1.4rem; font-weight: bold "> Сортировка массива:</div>
+                <div style=" width: 60px; background-color: mediumpurple; border-radius: 5px; box-shadow: 0 10px 30px #444">Python</div>
+                <div style=" font-size: 1.1rem;">В этих работах представлены основные виды сортировок и примеры их реализации.</div>
+            </div>
         </div>
-        <div>
-            <img src="site_data/algorithm.gif" style="width: 150px; background-color: white" alt="алгоритм">
+        <br>
+        <div class="projects">
+            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab2.ipynb"><img src="site_data/algo_search.jpg" style="background-color: white " alt="алгоритм1"></a>
+            <div>
+                <div style=" font-size: 1.4rem; font-weight: bold ">Методы поиска массива:</div>
+                <div style=" width: 60px; background-color: mediumpurple; border-radius: 5px; box-shadow: 0 10px 30px #444">Python</div>
+                <div style=" font-size: 1.1rem;"> В этих работах представлены основные виды поиска и примеры их реализации.</div>
+            </div>
         </div>
-        <div>
-            <img src="site_data/fractal.gif" style="width: 140px; background-color: white" alt="фракталы">
+        <br>
+        <div class="projects">
+            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab3.ipynb"><img src="site_data/algo_words.jpg" style="background-color: white " alt="алгоритм2"></a>
+            <div>
+                <div style=" font-size: 1.4rem; font-weight: bold ">Методы поиска подстроки в строке:</div>
+                <div style=" width: 60px; background-color: mediumpurple; border-radius: 5px; box-shadow: 0 10px 30px #444">Python</div>
+                <div style=" font-size: 1.1rem;">В этих работах представлены виды поиска Кнута-Морриса-Пратта, Бойера-Мура и Алгоритм A* поиска на графе.</div>
+            </div>
+        </div>
+        <br>
+        <div class="projects">
+            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab4.ipynb"><img src="site_data/algo_stack.jpg" style="background-color: white " alt="алгоритм3"></a>
+            <div>
+                <div style=" font-size: 1.4rem; font-weight: bold ">Стек, дек, очередь:</div>
+                <div style=" width: 60px; background-color: mediumpurple; border-radius: 5px; box-shadow: 0 10px 30px #444">Python</div>
+                <div style=" font-size: 1.1rem;">В этих работах представлены реализации структуры данных:● Стек (stack)● Дек (deque) и примеры их реализации.</div>
+            </div>
+        </div>
+        <br>
+        <div class="projects">
+            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab5.ipynb"><img src="site_data/algo_fractal.jpg" style="background-color: white " alt="алгоритм4"></a>
+            <div>
+                <div style=" font-size: 1.4rem; font-weight: bold ">Рекурсия, фракталы:</div>
+                <div style=" width: 60px; background-color: mediumpurple; border-radius: 5px; box-shadow: 0 10px 30px #444">Python</div>
+                <div style=" font-size: 1.1rem;">В этих работах представлены реализации с применением рекурсивных функций генерации заданного типа фрактала.</div>
+            </div>
+        </div>
+        <br>
+        <div class="projects">
+            <a href="https://github.com/Nik-gt/SIAOD/blob/main/labs/Lab6.ipynb"><img src="site_data/algo_shortway.jpg" style="background-color: white " alt="алгоритм5"></a>
+            <div>
+                <div style=" font-size: 1.4rem; font-weight: bold ">Динамические алгоритмы поиска путей:</div>
+                <div style=" width: 60px; background-color: mediumpurple; border-radius: 5px; box-shadow: 0 10px 30px #444">Python</div>
+                <div style=" font-size: 1.1rem;">В этих работах представлены реализации алгоритмов поиска путей между двумя вершинами ориентированного взвешенного графа.</div>
+            </div>
         </div>
     </div>
 
-    <!--Секция 5 -->
     <h2>Хобби (комп.игры)</h2>
-    <div class="flex-container">
-        <div class="flex-item2">
-            <img src="site_data/ghostwire.jpg" style="width: 100%; margin: 0 0 0 10%; border-radius: 10px; box-shadow: 0 0 10px #444 " alt="GhostwireTokyo">
+    <div class="flex-container hobby">
+        <div>
+            <img src="site_data/ghostwire.jpg" style="width: 95%" alt="GhostwireTokyo">
         </div>
-        <div class="flex-item2">
-            <img src="site_data/L.A.-Noire.jpg" style="width: 100%; margin: 0 0 0 10%; border-radius: 10px; box-shadow: 0 0 10px #444 " alt="L.A.-Noire">
+        <div>
+            <img src="site_data/L.A.-Noire.jpg" style="width: 95% " alt="L.A.-Noire">
         </div>
-        <div class="flex-item2">
-            <img src="site_data/Quantum Break.jpg" style="width: 100%; margin: 0 0 0 10%; border-radius: 10px; box-shadow: 0 0 10px #444 " alt="Quantum Break">
+        <div>
+            <img src="site_data/Quantum Break.jpg" style="width: 95% " alt="Quantum Break">
         </div>
     </div>
+
+    <div style=" display: flex; flex-flow: row nowrap; justify-content: space-between;">
+        <p>©<!-- --> <!-- --><time>2022<!-- --></time> <!-- -->Никита Архипов<!-- --></p>
+    </div>
+
+    <!-- Изменение темы -->
     <script src="theme.js"></script>
+
 </body>
 </html>
