@@ -1,10 +1,11 @@
 /*Задаем параметры стандартных элементов */
 body {
+    background-image: url('site_data/34black.jpg');
+    background-size: 100%;
+    background-position: top center;
     margin: 1% 20% 1% 20%;
     font-size: larger;
     width: 60%;
-    color: white;
-    background: #373737;
 }
 
 h2{
@@ -13,10 +14,6 @@ h2{
 
 /*Задаем стиль ссылок, как обычный текст, при наведении-изменяем его */
 a {
-    font-family: var(--font-sans);
-    font-weight: var(--font-weight-6);
-    font-size: var(--font-size-5);
-    padding: var(--size-4) var(--size-8);
     transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
     transition: transform 0.1s;
     position: relative;
@@ -110,6 +107,7 @@ img.hobby {
             margin: 1% 5% 1% 5%;
             font-size: medium;
             width: 90%;
+            background: #6b6b6b;
         }
 
         .hobby {
@@ -123,8 +121,7 @@ img.hobby {
         }
 
         .navigation {
-            flex-flow: row wrap;
-            justify-content: space-around;
+            display: none;
         }
 
         .projects {

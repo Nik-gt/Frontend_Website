@@ -1,9 +1,16 @@
 /*Задаем параметры стандартных элементов */
 body {
+    background-image: url('site_data/34.jpg');
+    background-size: 100% ;
+    background-position: top center;
     margin: 1% 20% 1% 20%;
     font-size: larger;
     width: 60%;
 }
+
+/*body * {
+    background: #e5e5e5;
+} */
 
 h2{
     text-align:center;
@@ -11,10 +18,6 @@ h2{
 
 /*Задаем стиль ссылок, как обычный текст, при наведении-изменяем его */
 a {
-    font-family: var(--font-sans);
-    font-weight: var(--font-weight-6);
-    font-size: var(--font-size-5);
-    padding: var(--size-4) var(--size-8);
     transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
     transition: transform 0.1s;
     position: relative;
@@ -42,11 +45,11 @@ li {
     list-style-type: none; /* Прячем исходные маркеры */
 }
 
-    li:before {
-        color: orange; /* Цвет маркера */
-        content: "●"; /* Сам маркер */
-        padding-right: 10px; /* Расстояние от маркера до текста */
-    }
+li:before {
+    color: orange; /* Цвет маркера */
+    content: "●"; /* Сам маркер */
+    padding-right: 10px; /* Расстояние от маркера до текста */
+}
 
 /*Заголовок со ссылками - flex контейнер*/
 .navigation {
@@ -101,35 +104,38 @@ img.hobby {
     margin: 5px 25px 20px 0;
 }
 
-    /*Настройкка media */
-    @media (max-width: 800px) {
-        body {
-            margin: 1% 5% 1% 5%;
-            font-size: medium;
-            width: 90%;
-        }
-
-        .hobby {
-            flex-flow: row wrap;
-            justify-content: flex-start;
-            width: 100%
-        }
-
-        img.hobby {
-            width: 95%;
-        }
-
-        .navigation {
-            flex-flow: row wrap;
-            justify-content: space-around;
-        }
-
-        .projects {
-            display: flex;
-            flex-flow: row wrap;
-        }
-
-            .projects img {
-                width: 95%;
-            }
+/*Настройкка media */
+@media (max-width: 800px) {
+    body {
+        margin: 1% 5% 1% 5%;
+        font-size: medium;
+        width: 90%;
+        background: none;
     }
+
+    .hobby {
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        width: 100%
+    }
+
+    img.hobby {
+        width: 95%;
+    }
+
+    .navigation {
+        display: none;
+        /*flex-flow: row wrap;
+        justify-content: space-around;
+        flex-direction: column;*/
+    }
+
+    .projects {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .projects img {
+        width: 95%;
+    }
+}
