@@ -6,12 +6,12 @@ const theme = document.querySelector("#theme-link");
 // Отслеживаем щелчок по кнопке
 btn.addEventListener("click", function() {
   // Если текущий адрес содержит "light-theme.css"
-  if (theme.getAttribute("href") == "style.css") {
+  if (theme.getAttribute("href") == "css/style.css") {
     // …то переключаемся на "dark-theme.css"
-    theme.href = "dark-style.css";
+    theme.href = "css/dark-style.css";
     // В противном случае… 
   } else {
     // …переключаемся на "light-theme.css"
-    theme.href = "style.css";
+    theme.href = "css/style.css";
   }
 });
